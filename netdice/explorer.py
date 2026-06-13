@@ -27,6 +27,7 @@ class Explorer:
 
         self._igp_provider = IgpProvider(p)
         self._trace = []
+        self.prec_trace = []    # list of (num_explored, imprecision) collected when stat_prec is set
 
         self._queue = None
         self._prev_state = None
@@ -103,6 +104,8 @@ class Explorer:
 
         if self._stat_prec:
             log.data("precision", self.solution.p_explored.invert().val())
+            self.prec_trace.append(
+                (self.solution.num_explored, self.solution.p_explored.invert().val()))
 
         if self._stat_hot and self.solution.num_explored <= 10:
             log.data("fraction_hot", len(hot_edges) / float(len(state)))
