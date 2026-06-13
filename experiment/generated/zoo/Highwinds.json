@@ -1,0 +1,663 @@
+{
+  "version": "0.1",
+  "topology": {
+    "nodes": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17"
+    ],
+    "links": [
+      {
+        "u": "0",
+        "v": "2",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "0",
+        "v": "3",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "1",
+        "v": "5",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "1",
+        "v": "6",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "1",
+        "v": "7",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "2",
+        "v": "9",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "2",
+        "v": "14",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "4",
+        "v": "17",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "4",
+        "v": "5",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "4",
+        "v": "6",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "4",
+        "v": "7",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "8",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "8",
+        "v": "16",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "8",
+        "v": "17",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "8",
+        "v": "15",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "9",
+        "v": "17",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "9",
+        "v": "13",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "9",
+        "v": "15",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "10",
+        "v": "11",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "10",
+        "v": "15",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "11",
+        "v": "17",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "11",
+        "v": "12",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "11",
+        "v": "15",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "12",
+        "v": "13",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "12",
+        "v": "14",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "12",
+        "v": "15",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "13",
+        "v": "14",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "14",
+        "v": "17",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "14",
+        "v": "15",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "15",
+        "v": "16",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "15",
+        "v": "17",
+        "w_uv": 1,
+        "w_vu": 1
+      }
+    ],
+    "static_routes": [],
+    "bgp": {
+      "as": 100,
+      "internal_routers": [
+        {
+          "node": "0",
+          "peer_id": 0
+        },
+        {
+          "node": "1",
+          "peer_id": 1
+        },
+        {
+          "node": "2",
+          "peer_id": 2
+        },
+        {
+          "node": "3",
+          "peer_id": 3
+        },
+        {
+          "node": "4",
+          "peer_id": 4
+        },
+        {
+          "node": "5",
+          "peer_id": 5
+        },
+        {
+          "node": "6",
+          "peer_id": 6
+        },
+        {
+          "node": "7",
+          "peer_id": 7
+        },
+        {
+          "node": "8",
+          "peer_id": 8
+        },
+        {
+          "node": "9",
+          "peer_id": 9
+        },
+        {
+          "node": "10",
+          "peer_id": 10
+        },
+        {
+          "node": "11",
+          "peer_id": 11
+        },
+        {
+          "node": "12",
+          "peer_id": 12
+        },
+        {
+          "node": "13",
+          "peer_id": 13
+        },
+        {
+          "node": "14",
+          "peer_id": 14
+        },
+        {
+          "node": "15",
+          "peer_id": 15
+        },
+        {
+          "node": "16",
+          "peer_id": 16
+        },
+        {
+          "node": "17",
+          "peer_id": 17
+        }
+      ],
+      "external_routers": [
+        {
+          "name": "X0",
+          "peers_with": "1",
+          "peer_id": 100000,
+          "as": 200
+        },
+        {
+          "name": "X1",
+          "peers_with": "2",
+          "peer_id": 100001,
+          "as": 200
+        },
+        {
+          "name": "X2",
+          "peers_with": "6",
+          "peer_id": 100002,
+          "as": 200
+        },
+        {
+          "name": "X3",
+          "peers_with": "8",
+          "peer_id": 100003,
+          "as": 200
+        },
+        {
+          "name": "X4",
+          "peers_with": "10",
+          "peer_id": 100004,
+          "as": 200
+        },
+        {
+          "name": "X5",
+          "peers_with": "11",
+          "peer_id": 100005,
+          "as": 200
+        },
+        {
+          "name": "X6",
+          "peers_with": "14",
+          "peer_id": 100006,
+          "as": 200
+        },
+        {
+          "name": "X7",
+          "peers_with": "15",
+          "peer_id": 100007,
+          "as": 200
+        },
+        {
+          "name": "X8",
+          "peers_with": "16",
+          "peer_id": 100008,
+          "as": 200
+        },
+        {
+          "name": "X9",
+          "peers_with": "17",
+          "peer_id": 100009,
+          "as": 200
+        }
+      ],
+      "internal_sessions": [
+        {
+          "route_reflector": "0",
+          "client": "1"
+        },
+        {
+          "route_reflector": "3",
+          "client": "1"
+        },
+        {
+          "route_reflector": "0",
+          "client": "2"
+        },
+        {
+          "route_reflector": "3",
+          "client": "2"
+        },
+        {
+          "route_reflector": "0",
+          "client": "4"
+        },
+        {
+          "route_reflector": "3",
+          "client": "4"
+        },
+        {
+          "route_reflector": "0",
+          "client": "5"
+        },
+        {
+          "route_reflector": "3",
+          "client": "5"
+        },
+        {
+          "route_reflector": "0",
+          "client": "6"
+        },
+        {
+          "route_reflector": "3",
+          "client": "6"
+        },
+        {
+          "route_reflector": "0",
+          "client": "7"
+        },
+        {
+          "route_reflector": "3",
+          "client": "7"
+        },
+        {
+          "route_reflector": "0",
+          "client": "8"
+        },
+        {
+          "route_reflector": "3",
+          "client": "8"
+        },
+        {
+          "route_reflector": "0",
+          "client": "9"
+        },
+        {
+          "route_reflector": "3",
+          "client": "9"
+        },
+        {
+          "route_reflector": "0",
+          "client": "10"
+        },
+        {
+          "route_reflector": "3",
+          "client": "10"
+        },
+        {
+          "route_reflector": "0",
+          "client": "11"
+        },
+        {
+          "route_reflector": "3",
+          "client": "11"
+        },
+        {
+          "route_reflector": "0",
+          "client": "12"
+        },
+        {
+          "route_reflector": "3",
+          "client": "12"
+        },
+        {
+          "route_reflector": "0",
+          "client": "13"
+        },
+        {
+          "route_reflector": "3",
+          "client": "13"
+        },
+        {
+          "route_reflector": "0",
+          "client": "14"
+        },
+        {
+          "route_reflector": "3",
+          "client": "14"
+        },
+        {
+          "route_reflector": "0",
+          "client": "15"
+        },
+        {
+          "route_reflector": "3",
+          "client": "15"
+        },
+        {
+          "route_reflector": "0",
+          "client": "16"
+        },
+        {
+          "route_reflector": "3",
+          "client": "16"
+        },
+        {
+          "route_reflector": "0",
+          "client": "17"
+        },
+        {
+          "route_reflector": "3",
+          "client": "17"
+        },
+        {
+          "peer_1": "0",
+          "peer_2": "3"
+        }
+      ]
+    }
+  },
+  "announcements": {
+    "10.0.0.0/24": {
+      "X0": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.0.1.0/24": {
+      "X0": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.1.0.0/24": {
+      "X1": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.1.1.0/24": {
+      "X1": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.2.0.0/24": {
+      "X2": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.2.1.0/24": {
+      "X2": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.3.0.0/24": {
+      "X3": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.3.1.0/24": {
+      "X3": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.4.0.0/24": {
+      "X4": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.4.1.0/24": {
+      "X4": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.5.0.0/24": {
+      "X5": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.5.1.0/24": {
+      "X5": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.6.0.0/24": {
+      "X6": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.6.1.0/24": {
+      "X6": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.7.0.0/24": {
+      "X7": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.7.1.0/24": {
+      "X7": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.8.0.0/24": {
+      "X8": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.8.1.0/24": {
+      "X8": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.9.0.0/24": {
+      "X9": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.9.1.0/24": {
+      "X9": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    }
+  },
+  "failures": {
+    "type": "LinkFailureModel",
+    "p_link_failure": 0.001
+  },
+  "properties": [
+    {
+      "type": "Waypoint",
+      "flow": {
+        "src": "4",
+        "dst": "10.0.0.0/24"
+      },
+      "waypoint": "0"
+    }
+  ]
+}
