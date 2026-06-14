@@ -1,12 +1,24 @@
 import argparse
+import csv
 import glob
 import os
 import time
+from dataclasses import dataclass
 
 from netdice.explorer import Explorer
 from netdice.input_parser import InputParser
 from netdice.my_logging import log
 from netdice.util import get_relative_to_working_directory
+
+
+@dataclass
+class BenchmarkRunResult:
+    elapsed_ms: int
+    states: int
+    imprecision: float
+    prob_low: float
+    prob_high: float
+    timed_out: bool
 
 
 def _median_ms(values):
@@ -22,21 +34,34 @@ def _median_ms(values):
 def run_once(problems, timeout_s, target=1.0e-4):
     """Run one NetDice exploration pass over all problems of a network.
 
-    Returns (elapsed_ms, states, worst_imprecision, timed_out). Time excludes file loading.
+    Time excludes file loading.
     """
     t = time.time()
     states = 0
     worst_imprecision = 0.0
+    prob_lows = []
+    prob_highs = []
     for problem in problems:
         problem.target_precision = target
         sol = Explorer(problem).explore_all(timeout_s)
         states += sol.num_explored
-        worst_imprecision = max(worst_imprecision, sol.p_explored.invert().val())
+        imprecision = sol.p_explored.invert().val()
+        prob_low = sol.p_property.val()
+        prob_high = prob_low + imprecision
+        worst_imprecision = max(worst_imprecision, imprecision)
+        prob_lows.append(prob_low)
+        prob_highs.append(prob_high)
     elapsed = time.time() - t
-    return int(round(elapsed * 1000)), states, worst_imprecision, elapsed >= timeout_s
+    return BenchmarkRunResult(
+        int(round(elapsed * 1000)),
+        states,
+        worst_imprecision,
+        min(prob_lows) if prob_lows else 0.0,
+        max(prob_highs) if prob_highs else 0.0,
+        elapsed >= timeout_s)
 
 
-def benchmark_one(group, path, args, fout):
+def benchmark_one(group, path, args, writer):
     network = os.path.splitext(os.path.basename(path))[0]
     try:
         parser = InputParser(path, None)
@@ -48,33 +73,39 @@ def benchmark_one(group, path, args, fout):
     links = problems[0].nof_links
     log.info("--- %s/%s (nodes=%d, links=%d) ---", group, network, nodes, links)
 
-    times = []
-    imprecisions = []
+    results = []
     states = 0
     timed_out = False
     for run in range(args.benchmark_runs):
-        elapsed_ms, states, imprecision, to = run_once(problems, args.benchmark_timeout)
-        times.append(elapsed_ms)
-        imprecisions.append(imprecision)
+        result = run_once(problems, args.benchmark_timeout)
+        results.append(result)
+        states = result.states
         log.info("    run %d: %d ms, states=%d, imprecision=%.3e%s",
-                 run + 1, elapsed_ms, states, imprecision, " (TIMEOUT)" if to else "")
-        if to:
+                 run + 1, result.elapsed_ms, result.states, result.imprecision,
+                 " (TIMEOUT)" if result.timed_out else "")
+        if result.timed_out:
             timed_out = True
             break  # stop remaining runs
 
+    times = [r.elapsed_ms for r in results]
     time_max = max(times) if times else 0
     time_median = _median_ms(times)
-    cells = [group, network, str(nodes), str(links), str(len(times)),
-             str(timed_out), str(states), str(time_max), str(time_median)]
+    states_sequence = ";".join(str(r.states) for r in results)
+    cells = [group, network, nodes, links, len(results), timed_out, states,
+             states_sequence, time_max, time_median]
     for i in range(args.benchmark_runs):
-        if i < len(times):
-            cells.append(str(times[i]))
-            cells.append("{:.6e}".format(imprecisions[i]))
+        if i < len(results):
+            result = results[i]
+            cells.append(result.elapsed_ms)
+            cells.append("{:.6e}".format(result.imprecision))
+            cells.append("{:.6e}".format(result.prob_low))
+            cells.append("{:.6e}".format(result.prob_high))
         else:
             cells.append("")
             cells.append("")
-    fout.write(",".join(cells) + "\n")
-    fout.flush()
+            cells.append("")
+            cells.append("")
+    writer.writerow(cells)
 
 
 def run_benchmark(args):
@@ -90,14 +121,17 @@ def run_benchmark(args):
              args.benchmark_timeout, args.benchmark_runs,
              "all" if args.benchmark_limit == 0 else args.benchmark_limit)
 
-    with open(out_path, "a") as fout:
+    with open(out_path, "a", newline="") as fout:
+        writer = csv.writer(fout)
         if fresh:
             header = ["group", "network", "nodes", "links", "runs", "timed_out", "states",
-                      "time_max_ms", "time_median_ms"]
+                      "states_sequence", "time_max_ms", "time_median_ms"]
             for i in range(1, args.benchmark_runs + 1):
                 header.append("run{}_ms".format(i))
                 header.append("run{}_imprecision".format(i))
-            fout.write(",".join(header) + "\n")
+                header.append("run{}_prob_low".format(i))
+                header.append("run{}_prob_high".format(i))
+            writer.writerow(header)
             fout.flush()
 
         for group in ["mrinfo", "mrinfo-ext", "zoo"]:
@@ -109,7 +143,8 @@ def run_benchmark(args):
             if args.benchmark_limit > 0:
                 files = files[:args.benchmark_limit]
             for path in files:
-                benchmark_one(group, path, args, fout)
+                benchmark_one(group, path, args, writer)
+                fout.flush()
     log.info("=== benchmark complete ===")
 
 
