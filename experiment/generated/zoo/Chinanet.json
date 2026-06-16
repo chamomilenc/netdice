@@ -619,19 +619,19 @@
       "external_routers": [
         {
           "name": "X0",
-          "peers_with": "0",
+          "peers_with": "2",
           "peer_id": 100000,
           "as": 200
         },
         {
           "name": "X1",
-          "peers_with": "1",
+          "peers_with": "3",
           "peer_id": 100001,
           "as": 200
         },
         {
           "name": "X2",
-          "peers_with": "2",
+          "peers_with": "4",
           "peer_id": 100002,
           "as": 200
         },
@@ -643,365 +643,365 @@
         },
         {
           "name": "X4",
-          "peers_with": "6",
+          "peers_with": "7",
           "peer_id": 100004,
           "as": 200
         },
         {
           "name": "X5",
-          "peers_with": "8",
+          "peers_with": "10",
           "peer_id": 100005,
           "as": 200
         },
         {
           "name": "X6",
-          "peers_with": "14",
+          "peers_with": "11",
           "peer_id": 100006,
           "as": 200
         },
         {
           "name": "X7",
-          "peers_with": "15",
+          "peers_with": "12",
           "peer_id": 100007,
           "as": 200
         },
         {
           "name": "X8",
-          "peers_with": "17",
+          "peers_with": "13",
           "peer_id": 100008,
           "as": 200
         },
         {
           "name": "X9",
-          "peers_with": "27",
+          "peers_with": "17",
           "peer_id": 100009,
           "as": 200
         }
       ],
       "internal_sessions": [
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "0"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "0"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "1"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "1"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "2"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "2"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "3"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "3"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "4"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "4"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "5"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "5"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "6"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "6"
         },
         {
-          "route_reflector": "7",
-          "client": "8"
+          "route_reflector": "8",
+          "client": "7"
         },
         {
-          "route_reflector": "40",
-          "client": "8"
+          "route_reflector": "39",
+          "client": "7"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "9"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "9"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "10"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "10"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "11"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "11"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "12"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "12"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "13"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "13"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "14"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "14"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "15"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "15"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "16"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "16"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "17"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "17"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "18"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "18"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "19"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "19"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "20"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "20"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "21"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "21"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "22"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "22"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "23"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "23"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "24"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "24"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "25"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "25"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "26"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "26"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "27"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "27"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "28"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "28"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "29"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "29"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "30"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "30"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "31"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "31"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "32"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "32"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "33"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "33"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "34"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "34"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "35"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "35"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "36"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "36"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "37"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "37"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "38"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "38"
         },
         {
-          "route_reflector": "7",
-          "client": "39"
+          "route_reflector": "8",
+          "client": "40"
         },
         {
-          "route_reflector": "40",
-          "client": "39"
+          "route_reflector": "39",
+          "client": "40"
         },
         {
-          "route_reflector": "7",
+          "route_reflector": "8",
           "client": "41"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "39",
           "client": "41"
         },
         {
-          "peer_1": "7",
-          "peer_2": "40"
+          "peer_1": "8",
+          "peer_2": "39"
         }
       ]
     }
@@ -1176,10 +1176,10 @@
     {
       "type": "Waypoint",
       "flow": {
-        "src": "3",
+        "src": "0",
         "dst": "10.0.0.0/24"
       },
-      "waypoint": "7"
+      "waypoint": "8"
     }
   ]
 }

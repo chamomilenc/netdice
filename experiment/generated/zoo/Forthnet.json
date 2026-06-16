@@ -695,61 +695,61 @@
       "external_routers": [
         {
           "name": "X0",
-          "peers_with": "1",
+          "peers_with": "0",
           "peer_id": 100000,
           "as": 200
         },
         {
           "name": "X1",
-          "peers_with": "6",
+          "peers_with": "1",
           "peer_id": 100001,
           "as": 200
         },
         {
           "name": "X2",
-          "peers_with": "8",
+          "peers_with": "2",
           "peer_id": 100002,
           "as": 200
         },
         {
           "name": "X3",
-          "peers_with": "14",
+          "peers_with": "4",
           "peer_id": 100003,
           "as": 200
         },
         {
           "name": "X4",
-          "peers_with": "15",
+          "peers_with": "5",
           "peer_id": 100004,
           "as": 200
         },
         {
           "name": "X5",
-          "peers_with": "17",
+          "peers_with": "6",
           "peer_id": 100005,
           "as": 200
         },
         {
           "name": "X6",
-          "peers_with": "43",
+          "peers_with": "8",
           "peer_id": 100006,
           "as": 200
         },
         {
           "name": "X7",
-          "peers_with": "47",
+          "peers_with": "9",
           "peer_id": 100007,
           "as": 200
         },
         {
           "name": "X8",
-          "peers_with": "53",
+          "peers_with": "10",
           "peer_id": 100008,
           "as": 200
         },
         {
           "name": "X9",
-          "peers_with": "58",
+          "peers_with": "11",
           "peer_id": 100009,
           "as": 200
         }
@@ -760,7 +760,7 @@
           "client": "0"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "0"
         },
         {
@@ -768,7 +768,7 @@
           "client": "1"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "1"
         },
         {
@@ -776,7 +776,7 @@
           "client": "2"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "2"
         },
         {
@@ -784,7 +784,7 @@
           "client": "3"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "3"
         },
         {
@@ -792,7 +792,7 @@
           "client": "4"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "4"
         },
         {
@@ -800,7 +800,7 @@
           "client": "5"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "5"
         },
         {
@@ -808,7 +808,7 @@
           "client": "6"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "6"
         },
         {
@@ -816,7 +816,7 @@
           "client": "8"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "8"
         },
         {
@@ -824,7 +824,7 @@
           "client": "9"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "9"
         },
         {
@@ -832,7 +832,7 @@
           "client": "10"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "10"
         },
         {
@@ -840,7 +840,7 @@
           "client": "11"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "11"
         },
         {
@@ -848,7 +848,7 @@
           "client": "12"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "12"
         },
         {
@@ -856,7 +856,7 @@
           "client": "13"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "13"
         },
         {
@@ -864,7 +864,7 @@
           "client": "14"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "14"
         },
         {
@@ -872,7 +872,7 @@
           "client": "15"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "15"
         },
         {
@@ -880,7 +880,7 @@
           "client": "16"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "16"
         },
         {
@@ -888,7 +888,7 @@
           "client": "17"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "17"
         },
         {
@@ -896,7 +896,7 @@
           "client": "18"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "18"
         },
         {
@@ -904,7 +904,7 @@
           "client": "19"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "19"
         },
         {
@@ -912,7 +912,7 @@
           "client": "20"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "20"
         },
         {
@@ -920,7 +920,7 @@
           "client": "21"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "21"
         },
         {
@@ -928,7 +928,7 @@
           "client": "22"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "22"
         },
         {
@@ -936,7 +936,7 @@
           "client": "23"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "23"
         },
         {
@@ -944,7 +944,7 @@
           "client": "24"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "24"
         },
         {
@@ -952,7 +952,7 @@
           "client": "25"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "25"
         },
         {
@@ -960,7 +960,7 @@
           "client": "26"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "26"
         },
         {
@@ -968,7 +968,7 @@
           "client": "27"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "27"
         },
         {
@@ -976,7 +976,7 @@
           "client": "28"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "28"
         },
         {
@@ -984,7 +984,7 @@
           "client": "29"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "29"
         },
         {
@@ -992,7 +992,7 @@
           "client": "30"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "30"
         },
         {
@@ -1000,7 +1000,7 @@
           "client": "31"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "31"
         },
         {
@@ -1008,7 +1008,7 @@
           "client": "32"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "32"
         },
         {
@@ -1016,7 +1016,7 @@
           "client": "33"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "33"
         },
         {
@@ -1024,7 +1024,7 @@
           "client": "34"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "34"
         },
         {
@@ -1032,7 +1032,7 @@
           "client": "35"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "35"
         },
         {
@@ -1040,7 +1040,7 @@
           "client": "36"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "36"
         },
         {
@@ -1048,7 +1048,7 @@
           "client": "37"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "37"
         },
         {
@@ -1056,7 +1056,7 @@
           "client": "38"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "38"
         },
         {
@@ -1064,15 +1064,23 @@
           "client": "39"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "39"
         },
         {
           "route_reflector": "7",
+          "client": "40"
+        },
+        {
+          "route_reflector": "55",
+          "client": "40"
+        },
+        {
+          "route_reflector": "7",
           "client": "41"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "41"
         },
         {
@@ -1080,7 +1088,7 @@
           "client": "42"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "42"
         },
         {
@@ -1088,7 +1096,7 @@
           "client": "43"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "43"
         },
         {
@@ -1096,7 +1104,7 @@
           "client": "44"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "44"
         },
         {
@@ -1104,7 +1112,7 @@
           "client": "45"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "45"
         },
         {
@@ -1112,7 +1120,7 @@
           "client": "46"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "46"
         },
         {
@@ -1120,7 +1128,7 @@
           "client": "47"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "47"
         },
         {
@@ -1128,7 +1136,7 @@
           "client": "48"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "48"
         },
         {
@@ -1136,7 +1144,7 @@
           "client": "49"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "49"
         },
         {
@@ -1144,7 +1152,7 @@
           "client": "50"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "50"
         },
         {
@@ -1152,7 +1160,7 @@
           "client": "51"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "51"
         },
         {
@@ -1160,7 +1168,7 @@
           "client": "52"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "52"
         },
         {
@@ -1168,7 +1176,7 @@
           "client": "53"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "53"
         },
         {
@@ -1176,23 +1184,15 @@
           "client": "54"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "54"
-        },
-        {
-          "route_reflector": "7",
-          "client": "55"
-        },
-        {
-          "route_reflector": "40",
-          "client": "55"
         },
         {
           "route_reflector": "7",
           "client": "56"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "56"
         },
         {
@@ -1200,7 +1200,7 @@
           "client": "57"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "57"
         },
         {
@@ -1208,7 +1208,7 @@
           "client": "58"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "58"
         },
         {
@@ -1216,7 +1216,7 @@
           "client": "59"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "59"
         },
         {
@@ -1224,7 +1224,7 @@
           "client": "60"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "60"
         },
         {
@@ -1232,12 +1232,12 @@
           "client": "61"
         },
         {
-          "route_reflector": "40",
+          "route_reflector": "55",
           "client": "61"
         },
         {
           "peer_1": "7",
-          "peer_2": "40"
+          "peer_2": "55"
         }
       ]
     }
@@ -1412,7 +1412,7 @@
     {
       "type": "Waypoint",
       "flow": {
-        "src": "0",
+        "src": "3",
         "dst": "10.0.0.0/24"
       },
       "waypoint": "7"

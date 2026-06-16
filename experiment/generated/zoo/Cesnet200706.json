@@ -551,49 +551,49 @@
         },
         {
           "name": "X2",
-          "peers_with": "5",
+          "peers_with": "4",
           "peer_id": 100002,
           "as": 200
         },
         {
           "name": "X3",
-          "peers_with": "6",
+          "peers_with": "8",
           "peer_id": 100003,
           "as": 200
         },
         {
           "name": "X4",
-          "peers_with": "8",
+          "peers_with": "10",
           "peer_id": 100004,
           "as": 200
         },
         {
           "name": "X5",
-          "peers_with": "14",
+          "peers_with": "11",
           "peer_id": 100005,
           "as": 200
         },
         {
           "name": "X6",
-          "peers_with": "15",
+          "peers_with": "12",
           "peer_id": 100006,
           "as": 200
         },
         {
           "name": "X7",
-          "peers_with": "17",
+          "peers_with": "13",
           "peer_id": 100007,
           "as": 200
         },
         {
           "name": "X8",
-          "peers_with": "27",
+          "peers_with": "14",
           "peer_id": 100008,
           "as": 200
         },
         {
           "name": "X9",
-          "peers_with": "34",
+          "peers_with": "15",
           "peer_id": 100009,
           "as": 200
         }
