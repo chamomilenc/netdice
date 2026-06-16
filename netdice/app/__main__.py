@@ -31,6 +31,21 @@ def _median_ms(values):
     return int(round((s[n // 2 - 1] + s[n // 2]) / 2.0))
 
 
+def _load_completed_benchmarks(out_path):
+    if not os.path.exists(out_path):
+        return set()
+
+    completed = set()
+    with open(out_path, newline="") as fin:
+        reader = csv.DictReader(fin)
+        for row in reader:
+            group = row.get("group")
+            network = row.get("network")
+            if group and network:
+                completed.add((group, network))
+    return completed
+
+
 def run_once(problems, timeout_s, target=1.0e-4):
     """Run one NetDice exploration pass over all problems of a network.
 
@@ -68,7 +83,7 @@ def benchmark_one(group, path, args, writer):
         problems = parser.get_problems()  # load once (excluded from timing)
     except Exception as e:  # noqa: BLE001 - report and continue on malformed input
         log.warning("load failed for %s/%s: %s", group, network, e)
-        return
+        return False
     nodes = problems[0].nof_nodes
     links = problems[0].nof_links
     log.info("--- %s/%s (nodes=%d, links=%d) ---", group, network, nodes, links)
@@ -106,6 +121,7 @@ def benchmark_one(group, path, args, writer):
             cells.append("")
             cells.append("")
     writer.writerow(cells)
+    return True
 
 
 def run_benchmark(args):
@@ -114,6 +130,7 @@ def run_benchmark(args):
     if out_dir:
         os.makedirs(out_dir, exist_ok=True)
     fresh = not os.path.exists(out_path)
+    completed = _load_completed_benchmarks(out_path)
 
     log.info("=== netdice benchmark ===")
     log.info("  output: %s", os.path.abspath(out_path))
@@ -143,7 +160,13 @@ def run_benchmark(args):
             if args.benchmark_limit > 0:
                 files = files[:args.benchmark_limit]
             for path in files:
-                benchmark_one(group, path, args, writer)
+                network = os.path.splitext(os.path.basename(path))[0]
+                benchmark_key = (group, network)
+                if benchmark_key in completed:
+                    log.info("skip completed benchmark: %s/%s", group, network)
+                    continue
+                if benchmark_one(group, path, args, writer):
+                    completed.add(benchmark_key)
                 fout.flush()
     log.info("=== benchmark complete ===")
 
