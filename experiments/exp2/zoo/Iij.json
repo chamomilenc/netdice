@@ -1,0 +1,1114 @@
+{
+  "version": "0.1",
+  "topology": {
+    "nodes": [
+      "0",
+      "1",
+      "2",
+      "3",
+      "4",
+      "5",
+      "6",
+      "7",
+      "8",
+      "9",
+      "10",
+      "11",
+      "12",
+      "13",
+      "14",
+      "15",
+      "16",
+      "17",
+      "18",
+      "19",
+      "20",
+      "21",
+      "22",
+      "23",
+      "24",
+      "25",
+      "26",
+      "27",
+      "28",
+      "29",
+      "30",
+      "31",
+      "32",
+      "33",
+      "34",
+      "35",
+      "36"
+    ],
+    "links": [
+      {
+        "u": "0",
+        "v": "6",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "0",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "1",
+        "v": "6",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "1",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "2",
+        "v": "6",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "2",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "3",
+        "v": "6",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "3",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "4",
+        "v": "6",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "5",
+        "v": "6",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "5",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "7",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "8",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "9",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "21",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "24",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "28",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "29",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "6",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "7",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "7",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "7",
+        "v": "13",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "8",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "9",
+        "v": "33",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "9",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "9",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "10",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "11",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "12",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "14",
+        "v": "19",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "15",
+        "v": "19",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "16",
+        "v": "24",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "17",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "18",
+        "v": "24",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "18",
+        "v": "25",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "18",
+        "v": "23",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "19",
+        "v": "24",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "19",
+        "v": "25",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "19",
+        "v": "23",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "20",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "20",
+        "v": "27",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "20",
+        "v": "21",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "21",
+        "v": "32",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "21",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "21",
+        "v": "35",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "21",
+        "v": "36",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "21",
+        "v": "22",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "21",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "22",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "23",
+        "v": "24",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "23",
+        "v": "25",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "24",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "24",
+        "v": "25",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "24",
+        "v": "26",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "25",
+        "v": "26",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "25",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "28",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "29",
+        "v": "30",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "30",
+        "v": "34",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "30",
+        "v": "33",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "30",
+        "v": "31",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "31",
+        "v": "32",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "34",
+        "v": "35",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "34",
+        "v": "36",
+        "w_uv": 1,
+        "w_vu": 1
+      }
+    ],
+    "static_routes": [],
+    "bgp": {
+      "as": 100,
+      "internal_routers": [
+        {
+          "node": "0",
+          "peer_id": 0
+        },
+        {
+          "node": "1",
+          "peer_id": 1
+        },
+        {
+          "node": "2",
+          "peer_id": 2
+        },
+        {
+          "node": "3",
+          "peer_id": 3
+        },
+        {
+          "node": "4",
+          "peer_id": 4
+        },
+        {
+          "node": "5",
+          "peer_id": 5
+        },
+        {
+          "node": "6",
+          "peer_id": 6
+        },
+        {
+          "node": "7",
+          "peer_id": 7
+        },
+        {
+          "node": "8",
+          "peer_id": 8
+        },
+        {
+          "node": "9",
+          "peer_id": 9
+        },
+        {
+          "node": "10",
+          "peer_id": 10
+        },
+        {
+          "node": "11",
+          "peer_id": 11
+        },
+        {
+          "node": "12",
+          "peer_id": 12
+        },
+        {
+          "node": "13",
+          "peer_id": 13
+        },
+        {
+          "node": "14",
+          "peer_id": 14
+        },
+        {
+          "node": "15",
+          "peer_id": 15
+        },
+        {
+          "node": "16",
+          "peer_id": 16
+        },
+        {
+          "node": "17",
+          "peer_id": 17
+        },
+        {
+          "node": "18",
+          "peer_id": 18
+        },
+        {
+          "node": "19",
+          "peer_id": 19
+        },
+        {
+          "node": "20",
+          "peer_id": 20
+        },
+        {
+          "node": "21",
+          "peer_id": 21
+        },
+        {
+          "node": "22",
+          "peer_id": 22
+        },
+        {
+          "node": "23",
+          "peer_id": 23
+        },
+        {
+          "node": "24",
+          "peer_id": 24
+        },
+        {
+          "node": "25",
+          "peer_id": 25
+        },
+        {
+          "node": "26",
+          "peer_id": 26
+        },
+        {
+          "node": "27",
+          "peer_id": 27
+        },
+        {
+          "node": "28",
+          "peer_id": 28
+        },
+        {
+          "node": "29",
+          "peer_id": 29
+        },
+        {
+          "node": "30",
+          "peer_id": 30
+        },
+        {
+          "node": "31",
+          "peer_id": 31
+        },
+        {
+          "node": "32",
+          "peer_id": 32
+        },
+        {
+          "node": "33",
+          "peer_id": 33
+        },
+        {
+          "node": "34",
+          "peer_id": 34
+        },
+        {
+          "node": "35",
+          "peer_id": 35
+        },
+        {
+          "node": "36",
+          "peer_id": 36
+        }
+      ],
+      "external_routers": [
+        {
+          "name": "X0",
+          "peers_with": "4",
+          "peer_id": 100000,
+          "as": 200
+        },
+        {
+          "name": "X1",
+          "peers_with": "10",
+          "peer_id": 100001,
+          "as": 200
+        },
+        {
+          "name": "X2",
+          "peers_with": "11",
+          "peer_id": 100002,
+          "as": 200
+        },
+        {
+          "name": "X3",
+          "peers_with": "12",
+          "peer_id": 100003,
+          "as": 200
+        },
+        {
+          "name": "X4",
+          "peers_with": "13",
+          "peer_id": 100004,
+          "as": 200
+        },
+        {
+          "name": "X5",
+          "peers_with": "14",
+          "peer_id": 100005,
+          "as": 200
+        },
+        {
+          "name": "X6",
+          "peers_with": "15",
+          "peer_id": 100006,
+          "as": 200
+        },
+        {
+          "name": "X7",
+          "peers_with": "16",
+          "peer_id": 100007,
+          "as": 200
+        },
+        {
+          "name": "X8",
+          "peers_with": "17",
+          "peer_id": 100008,
+          "as": 200
+        },
+        {
+          "name": "X9",
+          "peers_with": "27",
+          "peer_id": 100009,
+          "as": 200
+        }
+      ],
+      "internal_sessions": [
+        {
+          "route_reflector": "6",
+          "client": "0"
+        },
+        {
+          "route_reflector": "30",
+          "client": "0"
+        },
+        {
+          "route_reflector": "6",
+          "client": "1"
+        },
+        {
+          "route_reflector": "30",
+          "client": "1"
+        },
+        {
+          "route_reflector": "6",
+          "client": "2"
+        },
+        {
+          "route_reflector": "30",
+          "client": "2"
+        },
+        {
+          "route_reflector": "6",
+          "client": "3"
+        },
+        {
+          "route_reflector": "30",
+          "client": "3"
+        },
+        {
+          "route_reflector": "6",
+          "client": "4"
+        },
+        {
+          "route_reflector": "30",
+          "client": "4"
+        },
+        {
+          "route_reflector": "6",
+          "client": "5"
+        },
+        {
+          "route_reflector": "30",
+          "client": "5"
+        },
+        {
+          "route_reflector": "6",
+          "client": "7"
+        },
+        {
+          "route_reflector": "30",
+          "client": "7"
+        },
+        {
+          "route_reflector": "6",
+          "client": "8"
+        },
+        {
+          "route_reflector": "30",
+          "client": "8"
+        },
+        {
+          "route_reflector": "6",
+          "client": "9"
+        },
+        {
+          "route_reflector": "30",
+          "client": "9"
+        },
+        {
+          "route_reflector": "6",
+          "client": "10"
+        },
+        {
+          "route_reflector": "30",
+          "client": "10"
+        },
+        {
+          "route_reflector": "6",
+          "client": "11"
+        },
+        {
+          "route_reflector": "30",
+          "client": "11"
+        },
+        {
+          "route_reflector": "6",
+          "client": "12"
+        },
+        {
+          "route_reflector": "30",
+          "client": "12"
+        },
+        {
+          "route_reflector": "6",
+          "client": "13"
+        },
+        {
+          "route_reflector": "30",
+          "client": "13"
+        },
+        {
+          "route_reflector": "6",
+          "client": "14"
+        },
+        {
+          "route_reflector": "30",
+          "client": "14"
+        },
+        {
+          "route_reflector": "6",
+          "client": "15"
+        },
+        {
+          "route_reflector": "30",
+          "client": "15"
+        },
+        {
+          "route_reflector": "6",
+          "client": "16"
+        },
+        {
+          "route_reflector": "30",
+          "client": "16"
+        },
+        {
+          "route_reflector": "6",
+          "client": "17"
+        },
+        {
+          "route_reflector": "30",
+          "client": "17"
+        },
+        {
+          "route_reflector": "6",
+          "client": "18"
+        },
+        {
+          "route_reflector": "30",
+          "client": "18"
+        },
+        {
+          "route_reflector": "6",
+          "client": "19"
+        },
+        {
+          "route_reflector": "30",
+          "client": "19"
+        },
+        {
+          "route_reflector": "6",
+          "client": "20"
+        },
+        {
+          "route_reflector": "30",
+          "client": "20"
+        },
+        {
+          "route_reflector": "6",
+          "client": "21"
+        },
+        {
+          "route_reflector": "30",
+          "client": "21"
+        },
+        {
+          "route_reflector": "6",
+          "client": "22"
+        },
+        {
+          "route_reflector": "30",
+          "client": "22"
+        },
+        {
+          "route_reflector": "6",
+          "client": "23"
+        },
+        {
+          "route_reflector": "30",
+          "client": "23"
+        },
+        {
+          "route_reflector": "6",
+          "client": "24"
+        },
+        {
+          "route_reflector": "30",
+          "client": "24"
+        },
+        {
+          "route_reflector": "6",
+          "client": "25"
+        },
+        {
+          "route_reflector": "30",
+          "client": "25"
+        },
+        {
+          "route_reflector": "6",
+          "client": "26"
+        },
+        {
+          "route_reflector": "30",
+          "client": "26"
+        },
+        {
+          "route_reflector": "6",
+          "client": "27"
+        },
+        {
+          "route_reflector": "30",
+          "client": "27"
+        },
+        {
+          "route_reflector": "6",
+          "client": "28"
+        },
+        {
+          "route_reflector": "30",
+          "client": "28"
+        },
+        {
+          "route_reflector": "6",
+          "client": "29"
+        },
+        {
+          "route_reflector": "30",
+          "client": "29"
+        },
+        {
+          "route_reflector": "6",
+          "client": "31"
+        },
+        {
+          "route_reflector": "30",
+          "client": "31"
+        },
+        {
+          "route_reflector": "6",
+          "client": "32"
+        },
+        {
+          "route_reflector": "30",
+          "client": "32"
+        },
+        {
+          "route_reflector": "6",
+          "client": "33"
+        },
+        {
+          "route_reflector": "30",
+          "client": "33"
+        },
+        {
+          "route_reflector": "6",
+          "client": "34"
+        },
+        {
+          "route_reflector": "30",
+          "client": "34"
+        },
+        {
+          "route_reflector": "6",
+          "client": "35"
+        },
+        {
+          "route_reflector": "30",
+          "client": "35"
+        },
+        {
+          "route_reflector": "6",
+          "client": "36"
+        },
+        {
+          "route_reflector": "30",
+          "client": "36"
+        },
+        {
+          "peer_1": "6",
+          "peer_2": "30"
+        }
+      ]
+    }
+  },
+  "announcements": {
+    "10.0.0.0/24": {
+      "X0": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.0.1.0/24": {
+      "X0": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.1.0.0/24": {
+      "X1": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.1.1.0/24": {
+      "X1": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.2.0.0/24": {
+      "X2": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.2.1.0/24": {
+      "X2": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.3.0.0/24": {
+      "X3": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.3.1.0/24": {
+      "X3": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.4.0.0/24": {
+      "X4": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.4.1.0/24": {
+      "X4": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.5.0.0/24": {
+      "X5": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.5.1.0/24": {
+      "X5": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.6.0.0/24": {
+      "X6": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.6.1.0/24": {
+      "X6": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.7.0.0/24": {
+      "X7": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.7.1.0/24": {
+      "X7": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.8.0.0/24": {
+      "X8": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.8.1.0/24": {
+      "X8": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.9.0.0/24": {
+      "X9": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.9.1.0/24": {
+      "X9": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    }
+  },
+  "failures": {
+    "type": "LinkFailureModel",
+    "p_link_failure": 0.001
+  },
+  "properties": [
+    {
+      "type": "Waypoint",
+      "flow": {
+        "src": "0",
+        "dst": "10.0.0.0/24"
+      },
+      "waypoint": "22"
+    }
+  ]
+}

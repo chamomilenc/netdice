@@ -1,0 +1,139 @@
+{
+  "version": "fattree",
+  "topology": {
+    "nodes": [
+      "core-0-0",
+      "pod-0-agg-0",
+      "pod-1-agg-0",
+      "pod-0-leaf-0",
+      "pod-1-leaf-0"
+    ],
+    "links": [
+      {
+        "u": "pod-0-leaf-0",
+        "v": "pod-0-agg-0",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "pod-1-leaf-0",
+        "v": "pod-1-agg-0",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "pod-0-agg-0",
+        "v": "core-0-0",
+        "w_uv": 1,
+        "w_vu": 1
+      },
+      {
+        "u": "pod-1-agg-0",
+        "v": "core-0-0",
+        "w_uv": 1,
+        "w_vu": 1
+      }
+    ],
+    "static_routes": [],
+    "bgp": {
+      "routers": [
+        {
+          "node": "core-0-0",
+          "as": 65000,
+          "peer_id": 0,
+          "role": "core"
+        },
+        {
+          "node": "pod-0-agg-0",
+          "as": 65001,
+          "peer_id": 1,
+          "role": "aggregation"
+        },
+        {
+          "node": "pod-1-agg-0",
+          "as": 65002,
+          "peer_id": 2,
+          "role": "aggregation"
+        },
+        {
+          "node": "pod-0-leaf-0",
+          "as": 65003,
+          "peer_id": 3,
+          "role": "leaf"
+        },
+        {
+          "node": "pod-1-leaf-0",
+          "as": 65004,
+          "peer_id": 4,
+          "role": "leaf"
+        }
+      ],
+      "ebgp_sessions": [
+        {
+          "peer_1": "pod-0-leaf-0",
+          "peer_2": "pod-0-agg-0"
+        },
+        {
+          "peer_1": "pod-1-leaf-0",
+          "peer_2": "pod-1-agg-0"
+        },
+        {
+          "peer_1": "pod-0-agg-0",
+          "peer_2": "core-0-0"
+        },
+        {
+          "peer_1": "pod-1-agg-0",
+          "peer_2": "core-0-0"
+        }
+      ]
+    }
+  },
+  "announcements": {
+    "10.0.0.0/24": {
+      "pod-0-leaf-0": {
+        "lp": 100,
+        "aspl": 0,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.0.1.0/24": {
+      "pod-0-leaf-0": {
+        "lp": 100,
+        "aspl": 0,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.1.0.0/24": {
+      "pod-1-leaf-0": {
+        "lp": 100,
+        "aspl": 0,
+        "origin": 0,
+        "med": 0
+      }
+    },
+    "10.1.1.0/24": {
+      "pod-1-leaf-0": {
+        "lp": 100,
+        "aspl": 0,
+        "origin": 0,
+        "med": 0
+      }
+    }
+  },
+  "failures": {
+    "type": "LinkFailureModel",
+    "p_link_failure": 0.001
+  },
+  "properties": [
+    {
+      "type": "Waypoint",
+      "flow": {
+        "src": "pod-0-leaf-0",
+        "dst": "10.1.0.0/24"
+      },
+      "waypoint": "core-0-0"
+    }
+  ]
+}
