@@ -1,0 +1,1978 @@
+{
+  "version": "0.1",
+  "topology": {
+    "file": "Colt.txt",
+    "static_routes": [],
+    "bgp": {
+      "as": 100,
+      "internal_routers": [
+        {
+          "node": "0",
+          "peer_id": 10
+        },
+        {
+          "node": "1",
+          "peer_id": 11
+        },
+        {
+          "node": "2",
+          "peer_id": 12
+        },
+        {
+          "node": "3",
+          "peer_id": 13
+        },
+        {
+          "node": "4",
+          "peer_id": 14
+        },
+        {
+          "node": "5",
+          "peer_id": 15
+        },
+        {
+          "node": "6",
+          "peer_id": 16
+        },
+        {
+          "node": "7",
+          "peer_id": 17
+        },
+        {
+          "node": "8",
+          "peer_id": 18
+        },
+        {
+          "node": "9",
+          "peer_id": 19
+        },
+        {
+          "node": "10",
+          "peer_id": 20
+        },
+        {
+          "node": "11",
+          "peer_id": 21
+        },
+        {
+          "node": "12",
+          "peer_id": 22
+        },
+        {
+          "node": "13",
+          "peer_id": 23
+        },
+        {
+          "node": "14",
+          "peer_id": 24
+        },
+        {
+          "node": "15",
+          "peer_id": 25
+        },
+        {
+          "node": "16",
+          "peer_id": 26
+        },
+        {
+          "node": "17",
+          "peer_id": 27
+        },
+        {
+          "node": "18",
+          "peer_id": 28
+        },
+        {
+          "node": "19",
+          "peer_id": 29
+        },
+        {
+          "node": "20",
+          "peer_id": 30
+        },
+        {
+          "node": "21",
+          "peer_id": 31
+        },
+        {
+          "node": "22",
+          "peer_id": 32
+        },
+        {
+          "node": "23",
+          "peer_id": 33
+        },
+        {
+          "node": "24",
+          "peer_id": 34
+        },
+        {
+          "node": "25",
+          "peer_id": 35
+        },
+        {
+          "node": "26",
+          "peer_id": 36
+        },
+        {
+          "node": "27",
+          "peer_id": 37
+        },
+        {
+          "node": "28",
+          "peer_id": 38
+        },
+        {
+          "node": "29",
+          "peer_id": 39
+        },
+        {
+          "node": "30",
+          "peer_id": 40
+        },
+        {
+          "node": "31",
+          "peer_id": 41
+        },
+        {
+          "node": "32",
+          "peer_id": 42
+        },
+        {
+          "node": "33",
+          "peer_id": 43
+        },
+        {
+          "node": "34",
+          "peer_id": 44
+        },
+        {
+          "node": "35",
+          "peer_id": 45
+        },
+        {
+          "node": "36",
+          "peer_id": 46
+        },
+        {
+          "node": "37",
+          "peer_id": 47
+        },
+        {
+          "node": "38",
+          "peer_id": 48
+        },
+        {
+          "node": "39",
+          "peer_id": 49
+        },
+        {
+          "node": "40",
+          "peer_id": 50
+        },
+        {
+          "node": "41",
+          "peer_id": 51
+        },
+        {
+          "node": "42",
+          "peer_id": 52
+        },
+        {
+          "node": "43",
+          "peer_id": 53
+        },
+        {
+          "node": "44",
+          "peer_id": 54
+        },
+        {
+          "node": "45",
+          "peer_id": 55
+        },
+        {
+          "node": "46",
+          "peer_id": 56
+        },
+        {
+          "node": "47",
+          "peer_id": 57
+        },
+        {
+          "node": "48",
+          "peer_id": 58
+        },
+        {
+          "node": "49",
+          "peer_id": 59
+        },
+        {
+          "node": "50",
+          "peer_id": 60
+        },
+        {
+          "node": "51",
+          "peer_id": 61
+        },
+        {
+          "node": "52",
+          "peer_id": 62
+        },
+        {
+          "node": "53",
+          "peer_id": 63
+        },
+        {
+          "node": "54",
+          "peer_id": 64
+        },
+        {
+          "node": "55",
+          "peer_id": 65
+        },
+        {
+          "node": "56",
+          "peer_id": 66
+        },
+        {
+          "node": "57",
+          "peer_id": 67
+        },
+        {
+          "node": "58",
+          "peer_id": 68
+        },
+        {
+          "node": "59",
+          "peer_id": 69
+        },
+        {
+          "node": "60",
+          "peer_id": 70
+        },
+        {
+          "node": "61",
+          "peer_id": 71
+        },
+        {
+          "node": "62",
+          "peer_id": 72
+        },
+        {
+          "node": "63",
+          "peer_id": 73
+        },
+        {
+          "node": "64",
+          "peer_id": 74
+        },
+        {
+          "node": "65",
+          "peer_id": 75
+        },
+        {
+          "node": "66",
+          "peer_id": 76
+        },
+        {
+          "node": "67",
+          "peer_id": 77
+        },
+        {
+          "node": "68",
+          "peer_id": 78
+        },
+        {
+          "node": "69",
+          "peer_id": 79
+        },
+        {
+          "node": "70",
+          "peer_id": 80
+        },
+        {
+          "node": "71",
+          "peer_id": 81
+        },
+        {
+          "node": "72",
+          "peer_id": 82
+        },
+        {
+          "node": "73",
+          "peer_id": 83
+        },
+        {
+          "node": "74",
+          "peer_id": 84
+        },
+        {
+          "node": "75",
+          "peer_id": 85
+        },
+        {
+          "node": "76",
+          "peer_id": 86
+        },
+        {
+          "node": "77",
+          "peer_id": 87
+        },
+        {
+          "node": "78",
+          "peer_id": 88
+        },
+        {
+          "node": "79",
+          "peer_id": 89
+        },
+        {
+          "node": "80",
+          "peer_id": 90
+        },
+        {
+          "node": "81",
+          "peer_id": 91
+        },
+        {
+          "node": "82",
+          "peer_id": 92
+        },
+        {
+          "node": "83",
+          "peer_id": 93
+        },
+        {
+          "node": "84",
+          "peer_id": 94
+        },
+        {
+          "node": "85",
+          "peer_id": 95
+        },
+        {
+          "node": "86",
+          "peer_id": 96
+        },
+        {
+          "node": "87",
+          "peer_id": 97
+        },
+        {
+          "node": "88",
+          "peer_id": 98
+        },
+        {
+          "node": "89",
+          "peer_id": 99
+        },
+        {
+          "node": "90",
+          "peer_id": 100
+        },
+        {
+          "node": "91",
+          "peer_id": 101
+        },
+        {
+          "node": "92",
+          "peer_id": 102
+        },
+        {
+          "node": "93",
+          "peer_id": 103
+        },
+        {
+          "node": "94",
+          "peer_id": 104
+        },
+        {
+          "node": "95",
+          "peer_id": 105
+        },
+        {
+          "node": "96",
+          "peer_id": 106
+        },
+        {
+          "node": "97",
+          "peer_id": 107
+        },
+        {
+          "node": "98",
+          "peer_id": 108
+        },
+        {
+          "node": "99",
+          "peer_id": 109
+        },
+        {
+          "node": "100",
+          "peer_id": 110
+        },
+        {
+          "node": "101",
+          "peer_id": 111
+        },
+        {
+          "node": "102",
+          "peer_id": 112
+        },
+        {
+          "node": "103",
+          "peer_id": 113
+        },
+        {
+          "node": "104",
+          "peer_id": 114
+        },
+        {
+          "node": "105",
+          "peer_id": 115
+        },
+        {
+          "node": "106",
+          "peer_id": 116
+        },
+        {
+          "node": "107",
+          "peer_id": 117
+        },
+        {
+          "node": "108",
+          "peer_id": 118
+        },
+        {
+          "node": "109",
+          "peer_id": 119
+        },
+        {
+          "node": "110",
+          "peer_id": 120
+        },
+        {
+          "node": "111",
+          "peer_id": 121
+        },
+        {
+          "node": "112",
+          "peer_id": 122
+        },
+        {
+          "node": "113",
+          "peer_id": 123
+        },
+        {
+          "node": "114",
+          "peer_id": 124
+        },
+        {
+          "node": "115",
+          "peer_id": 125
+        },
+        {
+          "node": "116",
+          "peer_id": 126
+        },
+        {
+          "node": "117",
+          "peer_id": 127
+        },
+        {
+          "node": "118",
+          "peer_id": 128
+        },
+        {
+          "node": "119",
+          "peer_id": 129
+        },
+        {
+          "node": "120",
+          "peer_id": 130
+        },
+        {
+          "node": "121",
+          "peer_id": 131
+        },
+        {
+          "node": "122",
+          "peer_id": 132
+        },
+        {
+          "node": "123",
+          "peer_id": 133
+        },
+        {
+          "node": "124",
+          "peer_id": 134
+        },
+        {
+          "node": "125",
+          "peer_id": 135
+        },
+        {
+          "node": "126",
+          "peer_id": 136
+        },
+        {
+          "node": "127",
+          "peer_id": 137
+        },
+        {
+          "node": "128",
+          "peer_id": 138
+        },
+        {
+          "node": "129",
+          "peer_id": 139
+        },
+        {
+          "node": "130",
+          "peer_id": 140
+        },
+        {
+          "node": "131",
+          "peer_id": 141
+        },
+        {
+          "node": "132",
+          "peer_id": 142
+        },
+        {
+          "node": "133",
+          "peer_id": 143
+        },
+        {
+          "node": "134",
+          "peer_id": 144
+        },
+        {
+          "node": "135",
+          "peer_id": 145
+        },
+        {
+          "node": "136",
+          "peer_id": 146
+        },
+        {
+          "node": "137",
+          "peer_id": 147
+        },
+        {
+          "node": "138",
+          "peer_id": 148
+        },
+        {
+          "node": "139",
+          "peer_id": 149
+        },
+        {
+          "node": "140",
+          "peer_id": 150
+        },
+        {
+          "node": "141",
+          "peer_id": 151
+        },
+        {
+          "node": "142",
+          "peer_id": 152
+        },
+        {
+          "node": "143",
+          "peer_id": 153
+        },
+        {
+          "node": "144",
+          "peer_id": 154
+        },
+        {
+          "node": "145",
+          "peer_id": 155
+        },
+        {
+          "node": "146",
+          "peer_id": 156
+        },
+        {
+          "node": "147",
+          "peer_id": 157
+        },
+        {
+          "node": "148",
+          "peer_id": 158
+        },
+        {
+          "node": "149",
+          "peer_id": 159
+        },
+        {
+          "node": "150",
+          "peer_id": 160
+        },
+        {
+          "node": "151",
+          "peer_id": 161
+        },
+        {
+          "node": "152",
+          "peer_id": 162
+        }
+      ],
+      "external_routers": [
+        {
+          "name": "X0",
+          "peers_with": "1",
+          "peer_id": 200,
+          "as": 200
+        },
+        {
+          "name": "X1",
+          "peers_with": "3",
+          "peer_id": 201,
+          "as": 200
+        },
+        {
+          "name": "X2",
+          "peers_with": "9",
+          "peer_id": 202,
+          "as": 200
+        },
+        {
+          "name": "X3",
+          "peers_with": "20",
+          "peer_id": 203,
+          "as": 200
+        },
+        {
+          "name": "X4",
+          "peers_with": "21",
+          "peer_id": 204,
+          "as": 200
+        },
+        {
+          "name": "X5",
+          "peers_with": "22",
+          "peer_id": 205,
+          "as": 200
+        },
+        {
+          "name": "X6",
+          "peers_with": "24",
+          "peer_id": 206,
+          "as": 200
+        },
+        {
+          "name": "X7",
+          "peers_with": "25",
+          "peer_id": 207,
+          "as": 200
+        },
+        {
+          "name": "X8",
+          "peers_with": "26",
+          "peer_id": 208,
+          "as": 200
+        },
+        {
+          "name": "X9",
+          "peers_with": "27",
+          "peer_id": 209,
+          "as": 200
+        }
+      ],
+      "internal_sessions": [
+        {
+          "route_reflector": "142",
+          "client": "0"
+        },
+        {
+          "route_reflector": "152",
+          "client": "0"
+        },
+        {
+          "route_reflector": "142",
+          "client": "1"
+        },
+        {
+          "route_reflector": "152",
+          "client": "1"
+        },
+        {
+          "route_reflector": "142",
+          "client": "2"
+        },
+        {
+          "route_reflector": "152",
+          "client": "2"
+        },
+        {
+          "route_reflector": "142",
+          "client": "3"
+        },
+        {
+          "route_reflector": "152",
+          "client": "3"
+        },
+        {
+          "route_reflector": "142",
+          "client": "4"
+        },
+        {
+          "route_reflector": "152",
+          "client": "4"
+        },
+        {
+          "route_reflector": "142",
+          "client": "5"
+        },
+        {
+          "route_reflector": "152",
+          "client": "5"
+        },
+        {
+          "route_reflector": "142",
+          "client": "6"
+        },
+        {
+          "route_reflector": "152",
+          "client": "6"
+        },
+        {
+          "route_reflector": "142",
+          "client": "7"
+        },
+        {
+          "route_reflector": "152",
+          "client": "7"
+        },
+        {
+          "route_reflector": "142",
+          "client": "8"
+        },
+        {
+          "route_reflector": "152",
+          "client": "8"
+        },
+        {
+          "route_reflector": "142",
+          "client": "9"
+        },
+        {
+          "route_reflector": "152",
+          "client": "9"
+        },
+        {
+          "route_reflector": "142",
+          "client": "10"
+        },
+        {
+          "route_reflector": "152",
+          "client": "10"
+        },
+        {
+          "route_reflector": "142",
+          "client": "11"
+        },
+        {
+          "route_reflector": "152",
+          "client": "11"
+        },
+        {
+          "route_reflector": "142",
+          "client": "12"
+        },
+        {
+          "route_reflector": "152",
+          "client": "12"
+        },
+        {
+          "route_reflector": "142",
+          "client": "13"
+        },
+        {
+          "route_reflector": "152",
+          "client": "13"
+        },
+        {
+          "route_reflector": "142",
+          "client": "14"
+        },
+        {
+          "route_reflector": "152",
+          "client": "14"
+        },
+        {
+          "route_reflector": "142",
+          "client": "15"
+        },
+        {
+          "route_reflector": "152",
+          "client": "15"
+        },
+        {
+          "route_reflector": "142",
+          "client": "16"
+        },
+        {
+          "route_reflector": "152",
+          "client": "16"
+        },
+        {
+          "route_reflector": "142",
+          "client": "17"
+        },
+        {
+          "route_reflector": "152",
+          "client": "17"
+        },
+        {
+          "route_reflector": "142",
+          "client": "18"
+        },
+        {
+          "route_reflector": "152",
+          "client": "18"
+        },
+        {
+          "route_reflector": "142",
+          "client": "19"
+        },
+        {
+          "route_reflector": "152",
+          "client": "19"
+        },
+        {
+          "route_reflector": "142",
+          "client": "20"
+        },
+        {
+          "route_reflector": "152",
+          "client": "20"
+        },
+        {
+          "route_reflector": "142",
+          "client": "21"
+        },
+        {
+          "route_reflector": "152",
+          "client": "21"
+        },
+        {
+          "route_reflector": "142",
+          "client": "22"
+        },
+        {
+          "route_reflector": "152",
+          "client": "22"
+        },
+        {
+          "route_reflector": "142",
+          "client": "23"
+        },
+        {
+          "route_reflector": "152",
+          "client": "23"
+        },
+        {
+          "route_reflector": "142",
+          "client": "24"
+        },
+        {
+          "route_reflector": "152",
+          "client": "24"
+        },
+        {
+          "route_reflector": "142",
+          "client": "25"
+        },
+        {
+          "route_reflector": "152",
+          "client": "25"
+        },
+        {
+          "route_reflector": "142",
+          "client": "26"
+        },
+        {
+          "route_reflector": "152",
+          "client": "26"
+        },
+        {
+          "route_reflector": "142",
+          "client": "27"
+        },
+        {
+          "route_reflector": "152",
+          "client": "27"
+        },
+        {
+          "route_reflector": "142",
+          "client": "28"
+        },
+        {
+          "route_reflector": "152",
+          "client": "28"
+        },
+        {
+          "route_reflector": "142",
+          "client": "29"
+        },
+        {
+          "route_reflector": "152",
+          "client": "29"
+        },
+        {
+          "route_reflector": "142",
+          "client": "30"
+        },
+        {
+          "route_reflector": "152",
+          "client": "30"
+        },
+        {
+          "route_reflector": "142",
+          "client": "31"
+        },
+        {
+          "route_reflector": "152",
+          "client": "31"
+        },
+        {
+          "route_reflector": "142",
+          "client": "32"
+        },
+        {
+          "route_reflector": "152",
+          "client": "32"
+        },
+        {
+          "route_reflector": "142",
+          "client": "33"
+        },
+        {
+          "route_reflector": "152",
+          "client": "33"
+        },
+        {
+          "route_reflector": "142",
+          "client": "34"
+        },
+        {
+          "route_reflector": "152",
+          "client": "34"
+        },
+        {
+          "route_reflector": "142",
+          "client": "35"
+        },
+        {
+          "route_reflector": "152",
+          "client": "35"
+        },
+        {
+          "route_reflector": "142",
+          "client": "36"
+        },
+        {
+          "route_reflector": "152",
+          "client": "36"
+        },
+        {
+          "route_reflector": "142",
+          "client": "37"
+        },
+        {
+          "route_reflector": "152",
+          "client": "37"
+        },
+        {
+          "route_reflector": "142",
+          "client": "38"
+        },
+        {
+          "route_reflector": "152",
+          "client": "38"
+        },
+        {
+          "route_reflector": "142",
+          "client": "39"
+        },
+        {
+          "route_reflector": "152",
+          "client": "39"
+        },
+        {
+          "route_reflector": "142",
+          "client": "40"
+        },
+        {
+          "route_reflector": "152",
+          "client": "40"
+        },
+        {
+          "route_reflector": "142",
+          "client": "41"
+        },
+        {
+          "route_reflector": "152",
+          "client": "41"
+        },
+        {
+          "route_reflector": "142",
+          "client": "42"
+        },
+        {
+          "route_reflector": "152",
+          "client": "42"
+        },
+        {
+          "route_reflector": "142",
+          "client": "43"
+        },
+        {
+          "route_reflector": "152",
+          "client": "43"
+        },
+        {
+          "route_reflector": "142",
+          "client": "44"
+        },
+        {
+          "route_reflector": "152",
+          "client": "44"
+        },
+        {
+          "route_reflector": "142",
+          "client": "45"
+        },
+        {
+          "route_reflector": "152",
+          "client": "45"
+        },
+        {
+          "route_reflector": "142",
+          "client": "46"
+        },
+        {
+          "route_reflector": "152",
+          "client": "46"
+        },
+        {
+          "route_reflector": "142",
+          "client": "47"
+        },
+        {
+          "route_reflector": "152",
+          "client": "47"
+        },
+        {
+          "route_reflector": "142",
+          "client": "48"
+        },
+        {
+          "route_reflector": "152",
+          "client": "48"
+        },
+        {
+          "route_reflector": "142",
+          "client": "49"
+        },
+        {
+          "route_reflector": "152",
+          "client": "49"
+        },
+        {
+          "route_reflector": "142",
+          "client": "50"
+        },
+        {
+          "route_reflector": "152",
+          "client": "50"
+        },
+        {
+          "route_reflector": "142",
+          "client": "51"
+        },
+        {
+          "route_reflector": "152",
+          "client": "51"
+        },
+        {
+          "route_reflector": "142",
+          "client": "52"
+        },
+        {
+          "route_reflector": "152",
+          "client": "52"
+        },
+        {
+          "route_reflector": "142",
+          "client": "53"
+        },
+        {
+          "route_reflector": "152",
+          "client": "53"
+        },
+        {
+          "route_reflector": "142",
+          "client": "54"
+        },
+        {
+          "route_reflector": "152",
+          "client": "54"
+        },
+        {
+          "route_reflector": "142",
+          "client": "55"
+        },
+        {
+          "route_reflector": "152",
+          "client": "55"
+        },
+        {
+          "route_reflector": "142",
+          "client": "56"
+        },
+        {
+          "route_reflector": "152",
+          "client": "56"
+        },
+        {
+          "route_reflector": "142",
+          "client": "57"
+        },
+        {
+          "route_reflector": "152",
+          "client": "57"
+        },
+        {
+          "route_reflector": "142",
+          "client": "58"
+        },
+        {
+          "route_reflector": "152",
+          "client": "58"
+        },
+        {
+          "route_reflector": "142",
+          "client": "59"
+        },
+        {
+          "route_reflector": "152",
+          "client": "59"
+        },
+        {
+          "route_reflector": "142",
+          "client": "60"
+        },
+        {
+          "route_reflector": "152",
+          "client": "60"
+        },
+        {
+          "route_reflector": "142",
+          "client": "61"
+        },
+        {
+          "route_reflector": "152",
+          "client": "61"
+        },
+        {
+          "route_reflector": "142",
+          "client": "62"
+        },
+        {
+          "route_reflector": "152",
+          "client": "62"
+        },
+        {
+          "route_reflector": "142",
+          "client": "63"
+        },
+        {
+          "route_reflector": "152",
+          "client": "63"
+        },
+        {
+          "route_reflector": "142",
+          "client": "64"
+        },
+        {
+          "route_reflector": "152",
+          "client": "64"
+        },
+        {
+          "route_reflector": "142",
+          "client": "65"
+        },
+        {
+          "route_reflector": "152",
+          "client": "65"
+        },
+        {
+          "route_reflector": "142",
+          "client": "66"
+        },
+        {
+          "route_reflector": "152",
+          "client": "66"
+        },
+        {
+          "route_reflector": "142",
+          "client": "67"
+        },
+        {
+          "route_reflector": "152",
+          "client": "67"
+        },
+        {
+          "route_reflector": "142",
+          "client": "68"
+        },
+        {
+          "route_reflector": "152",
+          "client": "68"
+        },
+        {
+          "route_reflector": "142",
+          "client": "69"
+        },
+        {
+          "route_reflector": "152",
+          "client": "69"
+        },
+        {
+          "route_reflector": "142",
+          "client": "70"
+        },
+        {
+          "route_reflector": "152",
+          "client": "70"
+        },
+        {
+          "route_reflector": "142",
+          "client": "71"
+        },
+        {
+          "route_reflector": "152",
+          "client": "71"
+        },
+        {
+          "route_reflector": "142",
+          "client": "72"
+        },
+        {
+          "route_reflector": "152",
+          "client": "72"
+        },
+        {
+          "route_reflector": "142",
+          "client": "73"
+        },
+        {
+          "route_reflector": "152",
+          "client": "73"
+        },
+        {
+          "route_reflector": "142",
+          "client": "74"
+        },
+        {
+          "route_reflector": "152",
+          "client": "74"
+        },
+        {
+          "route_reflector": "142",
+          "client": "75"
+        },
+        {
+          "route_reflector": "152",
+          "client": "75"
+        },
+        {
+          "route_reflector": "142",
+          "client": "76"
+        },
+        {
+          "route_reflector": "152",
+          "client": "76"
+        },
+        {
+          "route_reflector": "142",
+          "client": "77"
+        },
+        {
+          "route_reflector": "152",
+          "client": "77"
+        },
+        {
+          "route_reflector": "142",
+          "client": "78"
+        },
+        {
+          "route_reflector": "152",
+          "client": "78"
+        },
+        {
+          "route_reflector": "142",
+          "client": "79"
+        },
+        {
+          "route_reflector": "152",
+          "client": "79"
+        },
+        {
+          "route_reflector": "142",
+          "client": "80"
+        },
+        {
+          "route_reflector": "152",
+          "client": "80"
+        },
+        {
+          "route_reflector": "142",
+          "client": "81"
+        },
+        {
+          "route_reflector": "152",
+          "client": "81"
+        },
+        {
+          "route_reflector": "142",
+          "client": "82"
+        },
+        {
+          "route_reflector": "152",
+          "client": "82"
+        },
+        {
+          "route_reflector": "142",
+          "client": "83"
+        },
+        {
+          "route_reflector": "152",
+          "client": "83"
+        },
+        {
+          "route_reflector": "142",
+          "client": "84"
+        },
+        {
+          "route_reflector": "152",
+          "client": "84"
+        },
+        {
+          "route_reflector": "142",
+          "client": "85"
+        },
+        {
+          "route_reflector": "152",
+          "client": "85"
+        },
+        {
+          "route_reflector": "142",
+          "client": "86"
+        },
+        {
+          "route_reflector": "152",
+          "client": "86"
+        },
+        {
+          "route_reflector": "142",
+          "client": "87"
+        },
+        {
+          "route_reflector": "152",
+          "client": "87"
+        },
+        {
+          "route_reflector": "142",
+          "client": "88"
+        },
+        {
+          "route_reflector": "152",
+          "client": "88"
+        },
+        {
+          "route_reflector": "142",
+          "client": "89"
+        },
+        {
+          "route_reflector": "152",
+          "client": "89"
+        },
+        {
+          "route_reflector": "142",
+          "client": "90"
+        },
+        {
+          "route_reflector": "152",
+          "client": "90"
+        },
+        {
+          "route_reflector": "142",
+          "client": "91"
+        },
+        {
+          "route_reflector": "152",
+          "client": "91"
+        },
+        {
+          "route_reflector": "142",
+          "client": "92"
+        },
+        {
+          "route_reflector": "152",
+          "client": "92"
+        },
+        {
+          "route_reflector": "142",
+          "client": "93"
+        },
+        {
+          "route_reflector": "152",
+          "client": "93"
+        },
+        {
+          "route_reflector": "142",
+          "client": "94"
+        },
+        {
+          "route_reflector": "152",
+          "client": "94"
+        },
+        {
+          "route_reflector": "142",
+          "client": "95"
+        },
+        {
+          "route_reflector": "152",
+          "client": "95"
+        },
+        {
+          "route_reflector": "142",
+          "client": "96"
+        },
+        {
+          "route_reflector": "152",
+          "client": "96"
+        },
+        {
+          "route_reflector": "142",
+          "client": "97"
+        },
+        {
+          "route_reflector": "152",
+          "client": "97"
+        },
+        {
+          "route_reflector": "142",
+          "client": "98"
+        },
+        {
+          "route_reflector": "152",
+          "client": "98"
+        },
+        {
+          "route_reflector": "142",
+          "client": "99"
+        },
+        {
+          "route_reflector": "152",
+          "client": "99"
+        },
+        {
+          "route_reflector": "142",
+          "client": "100"
+        },
+        {
+          "route_reflector": "152",
+          "client": "100"
+        },
+        {
+          "route_reflector": "142",
+          "client": "101"
+        },
+        {
+          "route_reflector": "152",
+          "client": "101"
+        },
+        {
+          "route_reflector": "142",
+          "client": "102"
+        },
+        {
+          "route_reflector": "152",
+          "client": "102"
+        },
+        {
+          "route_reflector": "142",
+          "client": "103"
+        },
+        {
+          "route_reflector": "152",
+          "client": "103"
+        },
+        {
+          "route_reflector": "142",
+          "client": "104"
+        },
+        {
+          "route_reflector": "152",
+          "client": "104"
+        },
+        {
+          "route_reflector": "142",
+          "client": "105"
+        },
+        {
+          "route_reflector": "152",
+          "client": "105"
+        },
+        {
+          "route_reflector": "142",
+          "client": "106"
+        },
+        {
+          "route_reflector": "152",
+          "client": "106"
+        },
+        {
+          "route_reflector": "142",
+          "client": "107"
+        },
+        {
+          "route_reflector": "152",
+          "client": "107"
+        },
+        {
+          "route_reflector": "142",
+          "client": "108"
+        },
+        {
+          "route_reflector": "152",
+          "client": "108"
+        },
+        {
+          "route_reflector": "142",
+          "client": "109"
+        },
+        {
+          "route_reflector": "152",
+          "client": "109"
+        },
+        {
+          "route_reflector": "142",
+          "client": "110"
+        },
+        {
+          "route_reflector": "152",
+          "client": "110"
+        },
+        {
+          "route_reflector": "142",
+          "client": "111"
+        },
+        {
+          "route_reflector": "152",
+          "client": "111"
+        },
+        {
+          "route_reflector": "142",
+          "client": "112"
+        },
+        {
+          "route_reflector": "152",
+          "client": "112"
+        },
+        {
+          "route_reflector": "142",
+          "client": "113"
+        },
+        {
+          "route_reflector": "152",
+          "client": "113"
+        },
+        {
+          "route_reflector": "142",
+          "client": "114"
+        },
+        {
+          "route_reflector": "152",
+          "client": "114"
+        },
+        {
+          "route_reflector": "142",
+          "client": "115"
+        },
+        {
+          "route_reflector": "152",
+          "client": "115"
+        },
+        {
+          "route_reflector": "142",
+          "client": "116"
+        },
+        {
+          "route_reflector": "152",
+          "client": "116"
+        },
+        {
+          "route_reflector": "142",
+          "client": "117"
+        },
+        {
+          "route_reflector": "152",
+          "client": "117"
+        },
+        {
+          "route_reflector": "142",
+          "client": "118"
+        },
+        {
+          "route_reflector": "152",
+          "client": "118"
+        },
+        {
+          "route_reflector": "142",
+          "client": "119"
+        },
+        {
+          "route_reflector": "152",
+          "client": "119"
+        },
+        {
+          "route_reflector": "142",
+          "client": "120"
+        },
+        {
+          "route_reflector": "152",
+          "client": "120"
+        },
+        {
+          "route_reflector": "142",
+          "client": "121"
+        },
+        {
+          "route_reflector": "152",
+          "client": "121"
+        },
+        {
+          "route_reflector": "142",
+          "client": "122"
+        },
+        {
+          "route_reflector": "152",
+          "client": "122"
+        },
+        {
+          "route_reflector": "142",
+          "client": "123"
+        },
+        {
+          "route_reflector": "152",
+          "client": "123"
+        },
+        {
+          "route_reflector": "142",
+          "client": "124"
+        },
+        {
+          "route_reflector": "152",
+          "client": "124"
+        },
+        {
+          "route_reflector": "142",
+          "client": "125"
+        },
+        {
+          "route_reflector": "152",
+          "client": "125"
+        },
+        {
+          "route_reflector": "142",
+          "client": "126"
+        },
+        {
+          "route_reflector": "152",
+          "client": "126"
+        },
+        {
+          "route_reflector": "142",
+          "client": "127"
+        },
+        {
+          "route_reflector": "152",
+          "client": "127"
+        },
+        {
+          "route_reflector": "142",
+          "client": "128"
+        },
+        {
+          "route_reflector": "152",
+          "client": "128"
+        },
+        {
+          "route_reflector": "142",
+          "client": "129"
+        },
+        {
+          "route_reflector": "152",
+          "client": "129"
+        },
+        {
+          "route_reflector": "142",
+          "client": "130"
+        },
+        {
+          "route_reflector": "152",
+          "client": "130"
+        },
+        {
+          "route_reflector": "142",
+          "client": "131"
+        },
+        {
+          "route_reflector": "152",
+          "client": "131"
+        },
+        {
+          "route_reflector": "142",
+          "client": "132"
+        },
+        {
+          "route_reflector": "152",
+          "client": "132"
+        },
+        {
+          "route_reflector": "142",
+          "client": "133"
+        },
+        {
+          "route_reflector": "152",
+          "client": "133"
+        },
+        {
+          "route_reflector": "142",
+          "client": "134"
+        },
+        {
+          "route_reflector": "152",
+          "client": "134"
+        },
+        {
+          "route_reflector": "142",
+          "client": "135"
+        },
+        {
+          "route_reflector": "152",
+          "client": "135"
+        },
+        {
+          "route_reflector": "142",
+          "client": "136"
+        },
+        {
+          "route_reflector": "152",
+          "client": "136"
+        },
+        {
+          "route_reflector": "142",
+          "client": "137"
+        },
+        {
+          "route_reflector": "152",
+          "client": "137"
+        },
+        {
+          "route_reflector": "142",
+          "client": "138"
+        },
+        {
+          "route_reflector": "152",
+          "client": "138"
+        },
+        {
+          "route_reflector": "142",
+          "client": "139"
+        },
+        {
+          "route_reflector": "152",
+          "client": "139"
+        },
+        {
+          "route_reflector": "142",
+          "client": "140"
+        },
+        {
+          "route_reflector": "152",
+          "client": "140"
+        },
+        {
+          "route_reflector": "142",
+          "client": "141"
+        },
+        {
+          "route_reflector": "152",
+          "client": "141"
+        },
+        {
+          "route_reflector": "142",
+          "client": "143"
+        },
+        {
+          "route_reflector": "152",
+          "client": "143"
+        },
+        {
+          "route_reflector": "142",
+          "client": "144"
+        },
+        {
+          "route_reflector": "152",
+          "client": "144"
+        },
+        {
+          "route_reflector": "142",
+          "client": "145"
+        },
+        {
+          "route_reflector": "152",
+          "client": "145"
+        },
+        {
+          "route_reflector": "142",
+          "client": "146"
+        },
+        {
+          "route_reflector": "152",
+          "client": "146"
+        },
+        {
+          "route_reflector": "142",
+          "client": "147"
+        },
+        {
+          "route_reflector": "152",
+          "client": "147"
+        },
+        {
+          "route_reflector": "142",
+          "client": "148"
+        },
+        {
+          "route_reflector": "152",
+          "client": "148"
+        },
+        {
+          "route_reflector": "142",
+          "client": "149"
+        },
+        {
+          "route_reflector": "152",
+          "client": "149"
+        },
+        {
+          "route_reflector": "142",
+          "client": "150"
+        },
+        {
+          "route_reflector": "152",
+          "client": "150"
+        },
+        {
+          "route_reflector": "142",
+          "client": "151"
+        },
+        {
+          "route_reflector": "152",
+          "client": "151"
+        },
+        {
+          "peer_1": "142",
+          "peer_2": "152"
+        }
+      ]
+    }
+  },
+  "announcements": {
+    "42.42.0.0/16": {
+      "X0": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      },
+      "X1": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      },
+      "X2": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      },
+      "X3": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      },
+      "X4": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      },
+      "X5": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      },
+      "X6": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      },
+      "X7": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      },
+      "X8": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      },
+      "X9": {
+        "lp": 100,
+        "aspl": 1,
+        "origin": 0,
+        "med": 0
+      }
+    }
+  },
+  "failures": {
+    "type": "LinkFailureModel",
+    "p_link_failure": 0.001
+  },
+  "properties": [
+    {
+      "type": "Waypoint",
+      "flow": {
+        "src": "0",
+        "dst": "42.42.0.0/16"
+      },
+      "waypoint": "142"
+    }
+  ]
+}

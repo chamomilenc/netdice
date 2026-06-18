@@ -67,3 +67,5 @@ class Solution:
         self.num_explored = 0       # number of explored states
         self.p_explored = Prob(0)   # probability mass of all explored states
         self.p_property = Prob(0)   # lower bound on the property probability
+        self.precision_trace_states = []
+        self.precision_trace_imprecisions = []

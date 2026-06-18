@@ -99,10 +99,13 @@ class Explorer:
             log.debug(" -> DOES NOT HOLD")
         self.solution.num_explored += 1
 
-        log.debug("current precision: {}".format(self.solution.p_explored.invert().val()))
+        imprecision = self.solution.p_explored.invert().val()
+        log.debug("current precision: {}".format(imprecision))
 
         if self._stat_prec:
-            log.data("precision", self.solution.p_explored.invert().val())
+            self.solution.precision_trace_states.append(self.solution.num_explored)
+            self.solution.precision_trace_imprecisions.append(imprecision)
+            log.data("precision", imprecision)
 
         if self._stat_hot and self.solution.num_explored <= 10:
             log.data("fraction_hot", len(hot_edges) / float(len(state)))

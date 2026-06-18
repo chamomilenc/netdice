@@ -10,6 +10,33 @@ from netdice.util import get_relative_to_working_directory, project_root_dir
 
 
 IDICE_REPETITIONS = 10
+DETAIL_MODE = "netdice"
+DETAIL_COLUMNS = [
+    "network_name",
+    "mode",
+    "property_index",
+    "explored_states",
+    "imprecision",
+]
+IDICE_DETAIL_COLUMNS = [
+    "detail_states",
+    "detail_imprecisions",
+]
+IDICE_COLUMNS = [
+    "network_name",
+    "nodes",
+    "links",
+    "property_count",
+    "status",
+    "max_time_ms",
+    "median_time_ms",
+    "avg_time_ms",
+    "times_ms",
+    "explored_states",
+    "p_lows",
+    "p_highs",
+    "imprecisions",
+] + IDICE_DETAIL_COLUMNS
 
 
 def _format_precision_for_filename(precision: float) -> str:
@@ -23,6 +50,59 @@ def _format_precision_for_filename(precision: float) -> str:
 
 def _json_for_csv(value):
     return json.dumps(value, separators=(",", ":"))
+
+
+def _get_idice_output_file(dataset_label: str, precision: float):
+    results_dir = os.path.join(project_root_dir, "results")
+    if not os.path.exists(results_dir):
+        os.makedirs(results_dir)
+
+    precision_label = _format_precision_for_filename(precision)
+    return os.path.join(results_dir, "exp-{}-p{}-orinetdice.csv".format(dataset_label, precision_label))
+
+
+def _detail_network_name(input_file: str) -> str:
+    experiments_dir = os.path.join(project_root_dir, "experiments")
+    try:
+        relpath = os.path.relpath(input_file, experiments_dir)
+        if not relpath.startswith(".."):
+            return relpath
+    except ValueError:
+        pass
+    return os.path.basename(input_file)
+
+
+def _get_detail_output_file(input_file: str, precision: float):
+    results_dir = os.path.join(project_root_dir, "results")
+    if not os.path.exists(results_dir):
+        os.makedirs(results_dir)
+
+    stem = os.path.splitext(os.path.basename(input_file))[0]
+    precision_label = _format_precision_for_filename(precision)
+    return os.path.join(
+        results_dir,
+        "detail-{}-p{}-{}-ori.csv".format(stem, precision_label, DETAIL_MODE),
+    )
+
+
+def _empty_idice_row(network_name: str):
+    return {
+        "network_name": network_name,
+        "nodes": 0,
+        "links": 0,
+        "property_count": 0,
+        "status": "OK",
+        "max_time_ms": "",
+        "median_time_ms": "",
+        "avg_time_ms": "",
+        "times_ms": _json_for_csv([]),
+        "explored_states": _json_for_csv([]),
+        "p_lows": _json_for_csv([]),
+        "p_highs": _json_for_csv([]),
+        "imprecisions": _json_for_csv([]),
+        "detail_states": _json_for_csv([]),
+        "detail_imprecisions": _json_for_csv([]),
+    }
 
 
 def _resolve_idice_dataset(dataset: str):
@@ -67,6 +147,32 @@ def _idice_network_name(input_file: str) -> str:
     except ValueError:
         relpath = os.path.relpath(input_file, project_root_dir)
     return relpath
+
+
+def _resolve_detail_input(input_file: str):
+    input_file = os.path.abspath(input_file)
+    if not os.path.isfile(input_file):
+        raise ValueError("could not find network file '{}'".format(input_file))
+
+    experiments_dir = os.path.join(project_root_dir, "experiments")
+    try:
+        relpath = os.path.relpath(input_file, experiments_dir)
+    except ValueError:
+        relpath = None
+
+    if relpath is None or relpath == ".." or relpath.startswith(".." + os.sep):
+        raise ValueError("--detail expects a network file under experiments/<dataset>/")
+
+    parts = relpath.split(os.sep)
+    if len(parts) < 1:
+        raise ValueError("--detail expects a network file under experiments/<dataset>/")
+
+    if len(parts) == 1:
+        dataset_label = os.path.splitext(parts[0])[0]
+    else:
+        dataset_label = parts[0]
+
+    return input_file, relpath, dataset_label
 
 
 def _load_idice_metadata(input_file: str):
@@ -122,51 +228,16 @@ def _run_idice_experiment(dataset: str, precision: float):
     if len(input_files) == 0:
         raise ValueError("could not find any .json inputs in '{}'".format(dataset_dir))
 
-    results_dir = os.path.join(project_root_dir, "results")
-    if not os.path.exists(results_dir):
-        os.makedirs(results_dir)
-
-    precision_label = _format_precision_for_filename(precision)
-    output_file = os.path.join(results_dir, "exp-{}-p{}-orinetdice.csv".format(dataset_label, precision_label))
-
-    columns = [
-        "network_name",
-        "nodes",
-        "links",
-        "property_count",
-        "status",
-        "max_time_ms",
-        "median_time_ms",
-        "avg_time_ms",
-        "times_ms",
-        "explored_states",
-        "p_lows",
-        "p_highs",
-        "imprecisions",
-    ]
+    output_file = _get_idice_output_file(dataset_label, precision)
 
     log.info("running iDice-style experiment on %d networks from %s", len(input_files), dataset_dir)
     with open(output_file, "w", newline="") as csv_file:
-        writer = csv.DictWriter(csv_file, fieldnames=columns)
+        writer = csv.DictWriter(csv_file, fieldnames=IDICE_COLUMNS)
         writer.writeheader()
 
         for input_file in input_files:
             network_name = _idice_network_name(input_file)
-            row = {
-                "network_name": network_name,
-                "nodes": 0,
-                "links": 0,
-                "property_count": 0,
-                "status": "OK",
-                "max_time_ms": "",
-                "median_time_ms": "",
-                "avg_time_ms": "",
-                "times_ms": _json_for_csv([]),
-                "explored_states": _json_for_csv([]),
-                "p_lows": _json_for_csv([]),
-                "p_highs": _json_for_csv([]),
-                "imprecisions": _json_for_csv([]),
-            }
+            row = _empty_idice_row(network_name)
 
             try:
                 nodes, links, property_count = _load_idice_metadata(input_file)
@@ -206,6 +277,47 @@ def _run_idice_experiment(dataset: str, precision: float):
     return output_file
 
 
+def _write_detail_csv(output_file: str, network_name: str, property_traces):
+    with open(output_file, "w", newline="") as csv_file:
+        writer = csv.DictWriter(csv_file, fieldnames=DETAIL_COLUMNS)
+        writer.writeheader()
+        for property_index, trace_states, trace_imprecisions in property_traces:
+            for explored_states, imprecision in zip(trace_states, trace_imprecisions):
+                writer.writerow({
+                    "network_name": network_name,
+                    "mode": DETAIL_MODE,
+                    "property_index": property_index,
+                    "explored_states": explored_states,
+                    "imprecision": imprecision,
+                })
+
+
+def _run_idice_detail(input_file: str, precision: float):
+    from netdice.explorer import Explorer
+    from netdice.input_parser import InputParser
+
+    input_file, _, _ = _resolve_detail_input(input_file)
+    network_name = _detail_network_name(input_file)
+    output_file = _get_detail_output_file(input_file, precision)
+
+    parser = InputParser(input_file)
+    problems = parser.get_problems()
+    property_traces = []
+
+    for property_index, problem in enumerate(problems):
+        problem.target_precision = precision
+        explorer = Explorer(problem, stat_prec=True)
+        sol = explorer.explore_all()
+        property_traces.append((
+            property_index,
+            sol.precision_trace_states,
+            sol.precision_trace_imprecisions,
+        ))
+
+    _write_detail_csv(output_file, network_name, property_traces)
+    return output_file, network_name
+
+
 def _run_single_input(input_file: str, query_file: str, precision: float):
     from netdice.explorer import Explorer
     from netdice.input_parser import InputParser
@@ -234,6 +346,7 @@ if __name__ == "__main__":
     parser.add_argument('-p', '--precision', default=1.0E-4, help='target precision of result (default: 1.0E-4)', type=float)
     parser.add_argument('--expIdice', '--exp-idice', dest="exp_idice", action="store_true",
                         help='run all JSON inputs in experiments/<dataset> and emit an iDice-style CSV')
+    parser.add_argument('--detail', help='run one experiments/<dataset> network and record precision by explored states')
     parser.add_argument('-d', '-dataset', '--dataset', help='dataset name or directory for --expIdice, e.g. exp1')
     parser.add_argument('--quiet', action="store_true", help='only print results to console, no logs')
     parser.add_argument('--debug', action="store_true", help='print debug log to console')
@@ -245,6 +358,24 @@ if __name__ == "__main__":
         log.initialize('WARNING')
     else:
         log.initialize('INFO')
+
+    if args.detail:
+        if args.exp_idice:
+            parser.error("--detail cannot be combined with --expIdice")
+        if args.dataset is not None:
+            parser.error("--detail derives the dataset from the network path; do not pass -d/--dataset")
+        if args.query is not None:
+            parser.error("--detail does not support --query")
+        if args.input_file is not None:
+            parser.error("input_file is not used with --detail")
+
+        try:
+            detail_input_file = get_relative_to_working_directory(args.detail)
+            output_file, network_name = _run_idice_detail(detail_input_file, args.precision)
+        except ValueError as err:
+            parser.error(str(err))
+        print("wrote {} for {}".format(output_file, network_name))
+        raise SystemExit(0)
 
     if args.exp_idice:
         if args.dataset is None:
